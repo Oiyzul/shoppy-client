@@ -1,3 +1,4 @@
+import Filter from "@/components/Filter";
 import Image from "next/image";
 
 const ListPage = async({searchParams}:{searchParams:any}) => {
@@ -20,7 +21,8 @@ const ListPage = async({searchParams}:{searchParams:any}) => {
         </div>
       </div>
       {/* FILTER */}
-      
+      <Filter />
+
       {/* PRODUCTS */}
       {/* <h1 className="mt-12 text-xl font-semibold">
         {cat?.collection?.name} For You!
